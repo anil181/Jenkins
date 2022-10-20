@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                echo 'Checkout kar lo'
+            }
+        }
+        stage('Build') {
+            steps {
+                echo 'Build Kar liya'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Test Kar liya'
+            }
+        }
+        stage('Stage') {
+            steps {
+                echo 'Stage Kiya'
+            }
+        }        
+    }
+}
