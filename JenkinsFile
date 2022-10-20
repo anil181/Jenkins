@@ -5,6 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo 'Checkout kar lo'
+                git branch: 'main', url: 'https://github.com/anil181/Jenkins'
             }
         }
         stage('Build') {
