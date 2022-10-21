@@ -9,7 +9,7 @@ pipeline {
           }
         }
 
-        stage('') {
+        stage('Parallel') {
           agent any
           steps {
             echo 'SideCar'
